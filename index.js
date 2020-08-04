@@ -70,45 +70,56 @@ bot.on("message", message => {
 
    
     if(command === 'ban'){
-    	const userBan = message.mentions.users.first();
+    	
+        if(message.member.hasPermission('BAN_MEMBERS')){
+            const userBan = message.mentions.users.first();
 
-    	if (userBan) {
-    		var member = message.guild.member(userBan);
+            if (userBan) {
+                var member = message.guild.member(userBan);
 
-    		if (member){
-    			member.ban({
-    				reason: 'You broke the Rules.'
-    			}).then(() => {
-    				message.reply(`${userBan.tag} was Banned from the server.`)
-    			})
-    		}else{
-    			message.reply('That user is not in the server.');
-    		}
-    	}else {
-    		message.reply('you need to state a user to ban.')
-    	}
+                if (member){
+                    member.ban({
+                        reason: 'You broke the Rules.'
+                    }).then(() => {
+                        message.reply(`${userBan.tag} was Banned from the server.`)
+                    })
+                }else{
+                    message.reply('That user is not in the server.');
+                }
+            }else {
+                message.reply('you need to state a user to ban.')
+            }
+        }else{
+            message.reply('Hey...You cannot use that.')
+        }
+
     }else
     
 
     if (command === 'kick'){
-    	const userKick = message.mentions.users.first();
+    	
+        if(message.member.hasPermission('KICK_MEMBERS')){
+            const userKick = message.mentions.users.first();
 
-    	if(userKick) {
-    		var member = message.guild.member(userKick);
+            if(userKick) {
+                var member = message.guild.member(userKick);
 
-    		if (member) {
-    			member.kick('You have been kicked for breaking the Rules.').then(() => {
-    				message.reply(`kicked user ${userKick.tag} !`);
-    			}).catch(err => {
-    				message.reply('i was not able to kick that user.')
-    				console.log(err);
-    			})
-    		}else{
-    			message.reply('That user is not in the server.')
-    		}
-    	}else {
-    		message.reply('You need to state the person you want to kick.')
-    	}
+                if (member) {
+                    member.kick('You have been kicked for breaking the Rules.').then(() => {
+                        message.reply(`kicked user ${userKick.tag} !`);
+                    }).catch(err => {
+                        message.reply('i was not able to kick that user.')
+                        console.log(err);
+                    })
+                }else{
+                    message.reply('That user is not in the server.')
+                }
+            }else {
+                message.reply('You need to state the person you want to kick.')
+            }
+        }else{
+            message.reply('Hey...You cannot use that.')
+        }
     }
 
 
