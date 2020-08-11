@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const token = 'BOT TOKEN HERE';
+const token = 'NzQwMDg5Mzc3NTQzMjkwOTAz.Xyj78Q.ej02tX9ehb62S2N_6wFbWrWXUDw';
 const prefix = "jet"
 const ms = require('ms');
 
@@ -8,7 +8,7 @@ const ms = require('ms');
 bot.on('ready', () => {
 
     console.log('Your Bot is now Online.')
-    bot.user.setActivity("with depression", { type: "STREAMING", url: "https://www.youtube.com/watch?v=ldUT4FLxql4"})
+    bot.user.setActivity("with depression", { type: "STREAMING", url: "https://www.youtube.com/watch?v=DWcJFNfaw9c"})
         .then(presence => console.log(`Activity set to ${presence.activities[0].name}`))
         .catch(console.error);
     bot.user.setStatus('dnd')
@@ -54,11 +54,6 @@ bot.on("message", message => {
     }
 
 
-// if(command === 'invite') {
-//     message.channel.send('Here is my invite link: https://discord.com/BOT INVITE LINK')
-// }   
-
-
     if (command === 'invite') {
         const InviteBot = new Discord.RichEmbed()
             .setTitle('Invite me')
@@ -86,7 +81,7 @@ bot.on("message", message => {
                     member.ban({
                         reason: 'You broke the Rules.'
                     }).then(() => {
-                        message.channel.send(`${userBan.tag} was Banned from the server. \n https://imgur.com/JGIcxj6`)
+                        message.channel.send(`${userBan.tag} was Banned from the server. \nhttps://imgur.com/JGIcxj6`)
                     })
                 } else {
                     message.reply('That user is not in the server.');
@@ -111,7 +106,7 @@ bot.on("message", message => {
 
                 if (member) {
                     member.kick('You have been kicked for breaking the Rules.').then(() => {
-                        message.channel.send(`kicked ${userKick.tag}  \n https://gph.is/1NYr9tT`);
+                        message.channel.send(`kicked ${userKick.tag}  \nhttps://gph.is/1NYr9tT`);
                     }).catch(err => {
                         message.reply('i was not able to kick that user.')
                         console.log(err);
@@ -186,7 +181,7 @@ bot.on("message", message => {
         const Help = new Discord.RichEmbed()
             .setTitle(`JetBot - Help`)           
             .setColor("#c934eb")
-            .setDescription('my prefix : `jet` \n\n:robot: **Bot Commands** \n`about` , `invite` \n\n:tools: **Moderation Commands** \n`kick` , `Ban`\n\n:gear: **Utility Commands** \n`userinfo` , `serverinfo` \n\n:zany_face: **Fun Commands** \n`hi` , `ping`       ')
+            .setDescription('my prefix : `jet` \n\n:robot: **Bot Commands** \n`about` , `invite` \n\n:tools: **Moderation Commands** \n`kick` , `Ban`\n\n:gear: **Utility Commands** \n`userinfo` , `serverinfo` \n\n:zany_face: **Fun Commands** \n`hi` , `ping` \n\n:bulb:**Support Server** : \nhttps://discord.gg/59HSBfT           ')
         try {
             message.channel.send(Help);
         } catch {
