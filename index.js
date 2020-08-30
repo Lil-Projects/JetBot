@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
+require('dotenv').config();
 const bot = new Discord.Client();
-const token = 'NzQwMDg5Mzc3NTQzMjkwOTAz.Xyj78Q.MDz0Qq-sFXikdG517DKb3njQTUE';
+const token = process.env.TOKEN;
 const prefix = "jet"
 const ms = require('ms');
 
