@@ -9,7 +9,7 @@ const ms = require('ms');
 bot.on('ready', () => {
 
     console.log('Your Bot is now Online.')
-    bot.user.setActivity("with gang", { type: "STREAMING", url: "https://www.youtube.com/watch?v=DWcJFNfaw9c"})
+    bot.user.setActivity("with the gang", { type: "STREAMING", url: "https://www.youtube.com/watch?v=DWcJFNfaw9c"})
         .then(presence => console.log(`Activity set to ${presence.activities[0].name}`))
         .catch(console.error);
     bot.user.setStatus('dnd')
