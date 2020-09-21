@@ -41,7 +41,7 @@ bot.on("message", message => {
         const JetHub = new Discord.RichEmbed()
             .setColor(0xc934eb)
             .setTitle('__About Bot__ :')
-            .setDescription('JetBot was initially made for JetHub | official discord server but now it\'s an open source bot with some really cool features !')
+            .setDescription('JetBot was initially made for JetHub | official discord server but now it\'s an open source discord bot with some really cool features !')
             // .setAuthor(message.author.username)
             .addField(`Support server :`, `https://discord.gg/RsBUdcH`)
             // .setThumbnail(message.author.avatarURL)
