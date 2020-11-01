@@ -31,9 +31,14 @@ bot.on("message", message => {
 
 
     if (command === 'hi') {
-        message.channel.send('Hey wassup !')
+        message.channel.send('Hey wassup ! <:pepejoke:772351041928560661>')
     } else {
         // message.channel.send('i am online but something seems to be wrong')
+    }
+
+    if (command === 'genius') {
+        message.channel.send(`<:pepe_genius:772352189967630357>`)
+    } else {
     }
 
 
