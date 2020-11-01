@@ -12,7 +12,7 @@ A fun bot aims to provide premium services for free...currently under developmen
 
 ## :bookmark_tabs: Built With
 
-[Discord.js](https://discord.js.org)
+* [Discord.js](https://discord.js.org)
 
 ## :statue_of_liberty: Authors
 
