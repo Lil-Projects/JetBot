@@ -1,4 +1,4 @@
-# JetBot
+# <img src="https://i.imgur.com/snBADAb.png" width="30" height="30"/> JetHub
 
 This is the repo of beta version of [JetBot](https://discord.com/oauth2/authorize?client_id=740089377543290903&permissions=8&scope=bot) .
 
