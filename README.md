@@ -19,3 +19,10 @@ A fun bot aims to provide premium services for free...currently under developmen
 * **Harshit** - [HarshitKumarOjha](https://github.com/HarshitKumarOjha)
 * **Sanskar** - [SanskarJha](https://github.com/sanskarjha)
  -->
+
+---
+
+- paste bot token in .emv file
+ ```TOKEN=your token here```
+
+- run ```node index.js``` in terminal in the project directory
