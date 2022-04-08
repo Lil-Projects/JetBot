@@ -14,7 +14,8 @@ A fun bot aims to provide premium services for free...currently under developmen
 
 * [Discord.js](https://discord.js.org)
 
-## :statue_of_liberty: Authors
+<!-- ## :statue_of_liberty: Authors
 
 * **Harshit** - [HarshitKumarOjha](https://github.com/HarshitKumarOjha)
 * **Sanskar** - [SanskarJha](https://github.com/sanskarjha)
+ -->
