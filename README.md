@@ -6,7 +6,7 @@ This is the repo of beta version of [JetBot](https://discord.com/oauth2/authoriz
 
 A fun bot aims to provide premium services for free...currently under development.
 
-* Support Server - [![Discord](https://img.shields.io/discord/699584190462558220?color=%237289da&label=chat&url=https://discordjet.blogspot.com&logo=Discord&style=flat-square)](https://discord.gg/59HSBfT)
+* Support Server - [![Discord](https://img.shields.io/discord/699584190462558220?color=%237289da&label=chat&url=https://discordjet.blogspot.com&logo=Discord&style=flat-square)](https://skidee.me/discord)
 
 * Blog - [Discord Jet](https://discordjet.blogspot.com)
 
